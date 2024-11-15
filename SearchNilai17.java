@@ -21,7 +21,7 @@ public class SearchNilai17 {
             } 
             else {
                 System.out.println("Nilai yang dicari tidak ditemukan.");
-                return;
+                break;
             }
         }
 
