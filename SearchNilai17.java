@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class SearchNilai17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int nilai = 0, MHS = 0, key = 0, hasil = 0;
+        int nilai = 0, key = 0, hasil = 0;
         System.out.print("Masukkan banyaknya nilai yang akan diinput: ");
         nilai = sc.nextInt();
         int nilaiMHS[] = new int[nilai];
@@ -14,19 +14,18 @@ public class SearchNilai17 {
         System.out.print("Masukkan nilai yang ingin dicari: ");
         key = sc.nextInt();
 
-        for (int i = 0; i < nilaiMHS.length; i++) {
-            if (key == nilaiMHS[i]){
+        for (int i = 0; i < nilaiMHS.length;) {
+            if (key == nilaiMHS[i]) {
                 hasil = (i+1);
-                System.err.println();
+                System.out.println();
                 System.out.println("Nilai "+key+" ketemu, merupakan nilai mahasiswa ke-" +hasil);
+                System.out.println();
                 break;
             } 
-            else {
-                System.out.println("Nilai yang dicari tidak ditemukan.");
+            if (key != nilaiMHS[i]) { 
+                System.out.println("Nilai yang dicari tidak ditemukan."); 
                 break;
-            }
         }
-       
-        System.out.println();
     }
+}
 }
