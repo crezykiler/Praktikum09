@@ -25,7 +25,7 @@ public class SearchNilai17 {
             if (key != nilaiMHS[i]) { 
                 System.out.println("Nilai yang dicari tidak ditemukan."); 
                 break;
-        }
+        }  
     }
 }
 }
