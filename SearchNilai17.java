@@ -17,6 +17,9 @@ public class SearchNilai17 {
         for (int i = 0; i < nilaiMHS.length; i++) {
             if (key == nilaiMHS[i]){
                 hasil = (i+1);
+                System.out.println();
+                System.out.println("Nilai "+key+" ketemu, merupakan nilai mahasiswa ke-" +hasil);
+                System.out.println();
                 break;
             } 
             else {
@@ -24,9 +27,5 @@ public class SearchNilai17 {
                 break;
             }
         }
-
-        System.out.println();
-        System.out.println("Nilai "+key+" ketemu, merupakan nilai mahasiswa ke-" +hasil);
-        System.out.println();
     }
 }
